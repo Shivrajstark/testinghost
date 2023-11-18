@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    /* background-color: red; */
+}
+
+:root {
+    --t_color: hsl(240, 26%, 16%);
+    --t_color_2: hsl(240, 26%, 16%);
+    --t_ul_color: hsl(42, 100%, 51%);
+}
+
+
+/* #################_un_optomized_#########  style for tutorialsindex*/
+
+/* /--------- tutorial-heading ---------/ */
+
+h1.tutorial-head {
+    font-size: 35px;
+    color: var(--t_color);
+    margin-top: 35px;
+}
+
+.tutorial-head {
+    text-align: center;
+}
+
+
+/* /--------- tutorial-card-section ---------/ */
+
+
+
+.tutorial-card-section {
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+}
+
+.tutorial-card-container {
+    width: 80%;
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.tutorial-card {
+    border: 0px solid;
+    width: 30%;
+    padding: 10px;
+    cursor: pointer;
+    display: grid;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-box-shadow: hsl(240, 26%, 16%, 0.4) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: hsl(240, 26%, 16%, 0.4) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.tutorial-card:hover {
+    -webkit-box-shadow: hsla(240, 26%, 16%, 0.6) 2px 3px 8px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: hsl(240, 26%, 16%, 0.6) 2px 3px 8px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.tutorial-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tutorial-card a {
+
+    margin: 10px 0px 15px 0px;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+/* .tutorial-card button {} */
+
+.tutorial-card a.lm_link {
+    /* margin: 12px 0px 10px 0px; */
+    padding: 13px 10px 13px 10px;
+    background-color: var(--t_color);
+    border: none;
+    border-radius: 15px;
+    /* width: 100%; */
+    cursor: pointer;
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    width: max-content;
+    align-self: flex-end;
+
+}
+
+
+/* _____________________________________________# single tutorial site css #__  */
+
+
+
+
+hr {
+    border-bottom: 1px solid rgb(232, 219, 219);
+    margin: 5px;
+}
+
+.lang_main_container {
+    display: flex;
+    max-width: 100vw;
+}
+
+.lang_sidebar {
+
+    width: 15vw;
+    /* border: 2px solid black; */
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.lang_sidebar h1 {
+    font-size: 20px;
+    /* text-align: left; */
+    padding: 18px 1px 8px 16px;
+    font-weight: 400;
+}
+
+
+
+
+.lang_sidebar ul {
+    list-style-type: none;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+
+.lang_sidebar ul li {
+    text-align: left;
+    width: 100%;
+    padding: 2px 1px 1px 16px;
+    font-size: 15px;
+    height: 25px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.lang_sidebar ul li a {
+    text-decoration: inherit;
+    color: black;
+    
+}
+
+.lang_sidebar ul li:hover {
+    background: rgb(230, 225, 225);
+}
+
+.bg-active  {
+    background: var(--t_color) !important;
+}
+.bg-active a{
+    color: white;
+}
+
+/* -------------------------------------------  main content box */
+.side-gap {
+    flex-grow: 2;
+}
+
+.lang_main {
+    flex-grow: 8;
+    box-sizing: border-box;
+
+    /* transform: translate(15vw); */
+    /* border: 2px solid black; */
+}
+
+.lang_main h1 {
+    font-size: 41px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 16px 32px 32px 32px;
+}
+
+.intro_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 32px 24px;
+    background: var(--t_ul_color);
+    height: 30vh;
+}
+
+.intro_box h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.intro_box * {
+    margin: 5px 0;
+}
+
+.intro_box button {
+    /* width: 30%; */
+    padding: 10px 24px 10px 24px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: var(--t_color) !important;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+
+}
+
+.content_details {
+    background: white;
+    margin-top: 15px;
+}
+
+.content_details h2 {
+    padding: 1px 32px 12px 32px;
+    font-weight: 400;
+    font-size: 25px;
+
+}
+
+.content_details p {
+    padding: 1px 0px 15px 32px;
+}
+
+
+.content_details button {
+    /* width: 30%; */
+    padding: 10px 24px 10px 24px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: var(--t_color) !important;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+
+}
