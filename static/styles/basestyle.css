@@ -169,7 +169,7 @@ hr {
     color: white !important;
 }
 
-/* -------------------------------------------  main content box */
+/* -------------------------------------------  main content box ###### */
 .side-gap {
     flex-grow: 2;
 }
@@ -197,7 +197,10 @@ hr {
 }
 
 .content_box ul {
-    list-style-position: inside;
+    background-color: white;
+    
+    margin-left: 2vw;
+
 }
 
 /* yellow intro box */
