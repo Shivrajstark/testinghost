@@ -108,11 +108,12 @@ hr {
     margin: 5px;
 }
 
-.lang_main_container {
+.content_box_container {
     display: flex;
     max-width: 100vw;
 }
 
+/* sidebar- clesses */
 .lang_sidebar {
 
     width: 15vw;
@@ -130,9 +131,6 @@ hr {
     font-weight: 400;
 }
 
-
-
-
 .lang_sidebar ul {
     list-style-type: none;
     align-items: flex-start;
@@ -140,7 +138,6 @@ hr {
     flex-direction: column;
     height: auto;
 }
-
 
 .lang_sidebar ul li {
     text-align: left;
@@ -155,18 +152,21 @@ hr {
 .lang_sidebar ul li a {
     text-decoration: inherit;
     color: black;
-    
+
 }
 
 .lang_sidebar ul li:hover {
     background: rgb(230, 225, 225);
 }
 
-.bg-active  {
+
+/* for active tuto topic */
+.bg-active {
     background: var(--t_color) !important;
 }
-.bg-active a{
-    color: white;
+
+.bg-active a {
+    color: white !important;
 }
 
 /* -------------------------------------------  main content box */
@@ -174,23 +174,33 @@ hr {
     flex-grow: 2;
 }
 
-.lang_main {
-    flex-grow: 8;
+.content_box {
+    max-width: 85vw;
+    margin-left: 15vw;
     box-sizing: border-box;
 
     /* transform: translate(15vw); */
     /* border: 2px solid black; */
 }
 
-.lang_main h1 {
+.content_box h1 {
     font-size: 41px;
     font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: 16px 32px 32px 32px;
+    padding: 16px 32px 16px 32px;
 }
 
+.content_box h2 {
+    background-color: white;
+}
+
+.content_box ul {
+    list-style-position: inside;
+}
+
+/* yellow intro box */
 .intro_box {
     display: flex;
     flex-direction: column;
