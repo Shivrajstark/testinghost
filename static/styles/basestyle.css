@@ -151,6 +151,7 @@ hr {
 
 .lang_sidebar ul li a {
     text-decoration: inherit;
+    display: block;
     color: black;
 
 }
