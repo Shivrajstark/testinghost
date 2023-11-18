@@ -19,6 +19,29 @@
         -webkit-box-shadow: rgba(255, 87, 36, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         box-shadow: rgba(255, 87, 36, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
+
+    .lang_sidebar {
+
+        width: 20vw;
+        /* border: 2px solid black; */
+        position: fixed;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+
+    .content_box {
+        max-width: 80vw;
+        margin-left: 20vw;
+        box-sizing: border-box;
+        padding-left: .5em;
+
+        /* transform: translate(15vw); */
+        /* border: 2px solid black; */
+    }
+
+
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
