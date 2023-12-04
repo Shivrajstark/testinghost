@@ -41,16 +41,16 @@
         <li> <a href="/python/matchcase.html">match case</a></li>
         <li >  <a href="/python/forloop.html">for loop</a></li>
         <li > <a href="/python/breakcontinue.html">break and continue</a></li>
-        <li class="bg-active" > <a href="/python/pass.html">pass (keyword) </a></li>
+        <li> <a href="/python/breakcontinue.html">pass (keyword) </a></li>
       </ul>
       <h1>FUNCTIONS</h1>
       <ul>
-        <li><a href="/python/intro_function.html">intro about functions></a></li>
-        <li>Arguments and return</li>
-        <li>anonymos/lamda function</li>
-        <li>Recursion</li>
-        <li>Scopes in python</li>
-        <li>Global keyword</li>
+        <li><a href="/python/intro_function.html">intro about functions </a> </li>
+        <li ><a href="/python/arguments_functions.html">Arguments and return </a></li>
+        <li><a href="/python/anonymos.html">anonymos/lamda function</a></li>
+        <li ><a href="/python/recursion.html">Recursion</a></li>
+        <li  class="bg-active"><a href="/python/scopes.html">Scopes in python</a></li>
+        <li><a href="/python/global_keyword.html">Global keyword</a></li>
         <li>Modules</li>
         <li>Package</li>
       </ul>
@@ -87,18 +87,31 @@
     gap in side -->
     <div class="content_box">
      <!-- content start -->
-     <h1>Flow Control&nbsp;</h1>
-     <h3>Pass (keyword)</h3>
+     <h1>Scopes in Function</h1>
      <ul>
-     <li>
-     <p>The pass keyword in Python is a no-op or null operation. It serves as a placeholder where syntactically some code is required, but you don't want to execute any specific instructions. It's often used during development when a block of code is necessary by the syntax, but you don't want to perform any action</p>
-     </li>
+     <li>The term "scope" refers to the region of a program where a particular variable is accessible.</li>
+     <li>Python has several types of scopes, and understanding them is crucial for writing bug-free and maintainable code.</li>
      </ul>
-     <p>-------------------CODE-----------------------------</p>
-     <p>&nbsp;</p>
-     
-     
-     
+     <h4>The two main types of scopes in Python are:</h4>
+     <ul>
+     <li>Local scope&nbsp;</li>
+     <li>Global scope</li>
+     </ul>
+     <h3>Local scope</h3>
+     <ul>
+     <li>Variables defined within a function have a local scope.</li>
+     <li>They are only accessible within that specific function.</li>
+     <li>Once the function execution is complete, the local variables are destroyed, and their scope ceases to exist.</li>
+     </ul>
+     <p>--------------------------CODE---------------------------------</p>
+     <h3>Global scope</h3>
+     <ul>
+     <li>Variables defined outside of any function or block have a global scope.</li>
+     <li>They can be accessed from any part of the code, including functions.</li>
+     <li>Global variables persist throughout the lifetime of the program.</li>
+     </ul>
+     <p>---------------------------CODE_-------------------------------------</p>
+        
      <!-- content end -->
 
     </div>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/static/styles/basestyle.css" />
+  <link href="/static/styles/prism.css" rel="stylesheet" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <div class="lang_main_container">
+    <div class="lang_sidebar">
+      <h1>INTRODUCTION</h1>
+      <ul>
+        <li><a href="/python/tutorial.html">Get Started</a></li>
+        <li><a href="/python/keyword_identifiers.html">Keywords and Identifiers</a></li>
+        <li><a href="/python/statements_comments.html">Statements comments</a></li>
+        <li ><a href="/python/variables.html"> Variables </a></li>
+        <li ><a href="/python/datatypes.html">Datatypes</a></li>
+        <li><a href="/python/type_conversion.html">Type Conversion</a></li>
+        <li ><a href="/python/Input_output.html">I/O and import</a></li>
+        <li > <a href="/python/operators.html"> Operators (all 7) </a></li>
+        <li> <a href="/python/namespace.html">namespace</a></li>
+      </ul>
+      <h1>FLOW CONTROL NESTED's</h1>
+      <ul>
+        <li><a href="/python/if_else.html">if-else</a></li>
+        <li > <a href="/python/if_elseladder.html">if-else ledder using elif </a></li>
+        <li> <a href="/python/matchcase.html">match case</a></li>
+        <li >  <a href="/python/forloop.html">for loop</a></li>
+        <li > <a href="/python/breakcontinue.html">break and continue</a></li>
+        <li> <a href="/python/breakcontinue.html">pass (keyword) </a></li>
+      </ul>
+      <h1>FUNCTIONS</h1>
+      <ul>
+        <li><a href="/python/intro_function.html">intro about functions </a> </li>
+        <li ><a href="/python/arguments_functions.html">Arguments and return </a></li>
+        <li><a href="/python/anonymos.html">anonymos/lamda function</a></li>
+        <li ><a href="/python/recursion.html">Recursion</a></li>
+        <li><a href="/python/scopes.html">Scopes in python</a></li>
+        <li><a href="/python/global_keyword.html">Global keyword</a></li>
+        <li ><a href="/python/modules.html">Modules</a></li>
+        <li ><a href="/python/packages.html">Package</a></li>
+      </ul>
+      <h1>DATA STRUCTURE</h1>
+      <ul>
+        <li><a href="/python/list.html">List</a></li>
+        <li><a href="/python/dictionary.html">Dictionary</a></li>
+        <li><a href="/python/tuple.html">Tuple</a></li>
+        <li><a href="/python/string.html">String</a></li>
+        <li><a href="/python/numbers.html">Numbers</a></li>
+      </ul>
+      <h1>PYTHON FILE AND EXCEPTION</h1>
+      <ul>
+        <li ><a href="/python/file_operations.html">file operations</a></li>
+        <li class="bg-active"><a href="/python/directory.html">Directory</a></li>
+        <li><a href="/python/exception.html">Exception</a></li>
+        <li>Exception Handling</li>
+        <li>user-defined exception</li>
+      </ul>
+      <h1>OBJECT ORIENTED</h1>
+      <ul>
+        <li>into about OOPs</li>
+        <li>Class</li>
+        <li>Object class</li>
+        <li>Method</li>
+        <li>inheritance</li>
+        <li>polymorphism</li>
+        <li>Data abstraction</li>
+        <li>Encapsulation</li>
+        <li>Operators Overloading</li>
+      </ul>
+    </div>
+    <!-- <div class="side-gap"></div>
+    gap in side -->
+    <div class="content_box">
+     <!-- content start -->
+    
+     <h1 style="color: #000000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Directory</h1>
+     <ul>
+     <li>A directory is referred to as a folder, and the term used in programming is a "directory" or "folder" interchangeably.</li>
+     <li>Directories are used to organize files into a hierarchical structure.</li>
+     <li>Python provides modules to interact with directories and perform various operations.</li>
+     </ul>
+     <h3>Working with Directories</h3>
+     <ul>
+     <li>The os module in Python is commonly used for interacting with the operating system, including working with directories.</li>
+     </ul>
+     <h4>Creating a Directory</h4>
+     <ul>
+     <li>You can create a new directory using the os.makedirs() function</li>
+     </ul>
+     <p>-------------------------CODE----------------------------------------</p>
+     <h4>Checking if Directory exists</h4>
+     <ul>
+     <li>To check if a directory exists, you can use os.path.exists()</li>
+     </ul>
+     <p>-------------------------CODE------------------------------</p>
+     <h4>Changing with current working Directory</h4>
+     <ul>
+     <li>You can change the current working directory using os.chdir()</li>
+     </ul>
+     <p>-------------------------CODE----------------------------</p>
+     <h4>Listing Files and Directories&nbsp;</h4>
+     <ul>
+     <li>To list the contents of a directory, you can use os.listdir()</li>
+     </ul>
+     <p>-------------------------CODE----------------------------</p>
+     <h4>Removing a Directories</h4>
+     <ul>
+     <li>You can remove a directory using os.rmdir()</li>
+     </ul>
+     <p>-------------------------CODE----------------------------</p>
+     <p>&nbsp;</p>
+     <h3>Using os.path.join() for Platform Independence</h3>
+     <ul>
+     <li>When working with paths, it's a good practice to use os.path.join() to join directory and file names, making your code platform-independent</li>
+     </ul>
+     <p>-------------------------------------------CODES-----------------------------------------------------</p>
+     <!-- content end -->
+
+    </div>
+
+  </div>
+  <script src="/static/javascripts/prism.js"></script>
+</body>
+
+</html>
