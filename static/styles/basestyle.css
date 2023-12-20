@@ -474,3 +474,21 @@ i.las.la-angle-down
     font-size: 28px;
     padding-top: 3px;
 }
+
+
+.nav_bar_index
+{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    background-color: #fff;
+    padding-top: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.navbar_top_index
+{
+    background-color: #1f1f35;
+    width: 100%; 
+}
