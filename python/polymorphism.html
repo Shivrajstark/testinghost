@@ -134,6 +134,52 @@
      <li>It enables flexibility by allowing different classes to implement the same interface or method differently.</li>
      <li>Polymorphism simplifies code and promotes extensibility.</li>
      </ul>
+     <h4>Compile-time Polymorphism</h4>
+     <ul>
+     <li>Also known as method overloading.</li>
+     <li>Occurs at compile time.</li>
+     <li>Multiple methods with the same name exist in the same class, but they have different parameter lists.</li>
+     <li>The correct method is chosen based on the number or types of arguments during compilation.</li>
+     </ul>
+     <pre class="language-python"><code>class Calculator:
+         def add(self, a, b):
+             return a + b
+     
+         def add(self, a, b, c):
+             return a + b + c
+     
+     calc = Calculator()
+     result1 = calc.add(2, 3)      # Calls the first add method
+     result2 = calc.add(2, 3, 5)   # Calls the second add method
+     </code></pre>
+     <h4>Run-time Polymorphism</h4>
+     <ul>
+     <li>Also known as method overriding.</li>
+     <li>Occurs at runtime.</li>
+     <li>Involves a base class and a derived class, where the derived class provides a specific implementation of a method defined in the base class.</li>
+     <li>The correct method is chosen during runtime based on the actual type of the object.</li>
+     </ul>
+     <pre class="language-python"><code>class Animal:
+         def make_sound(self):
+             pass
+     
+     class Dog(Animal):
+         def make_sound(self):
+             return "Woof!"
+     
+     class Cat(Animal):
+         def make_sound(self):
+             return "Meow!"
+     
+     def animal_sounds(animal):
+         return animal.make_sound()
+     
+     dog = Dog()
+     cat = Cat()
+     
+     sound1 = animal_sounds(dog)  # Calls make_sound in Dog class
+     sound2 = animal_sounds(cat)  # Calls make_sound in Cat class
+     </code></pre>
      <!-- content end -->
 
     </div>

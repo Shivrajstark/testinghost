@@ -134,6 +134,33 @@
      <li>When something goes wrong, instead of letting the program crash and burn, you can use exception handling to catch and handle those errors gracefully.</li>
      <li>It's a way of making your code more robust and ensuring that it can handle unexpected situations without breaking down completely.</li>
      </ul>
+     <pre class="language-python"><code>def divide_numbers(dividend, divisor):
+         try:
+             result = dividend / divisor
+         except ZeroDivisionError:
+             print("Error: Cannot divide by zero!")
+         except TypeError:
+             print("Error: Invalid operand types!")
+         else:
+             print("Division result:", result)
+         finally:
+             print("Exception handling complete.")
+     
+     # Example 1: Valid division
+     divide_numbers(10, 2)
+     # Output: Division result: 5.0
+     # Output: Exception handling complete.
+     
+     # Example 2: Division by zero
+     divide_numbers(10, 0)
+     # Output: Error: Cannot divide by zero!
+     # Output: Exception handling complete.
+     
+     # Example 3: Invalid operand types
+     divide_numbers("abc", 2)
+     # Output: Error: Invalid operand types!
+     # Output: Exception handling complete.
+     </code></pre>
      <!-- content end -->
 
     </div>

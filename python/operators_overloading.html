@@ -136,10 +136,91 @@
      <h4>Some Operators Overloading are :&nbsp;</h4>
      <ul>
      <li>Overloading Binary Operators</li>
+     </ul>
+     <pre class="language-python"><code># Simple Overloading of Binary Operator Example
+     
+     class Number:
+         def __init__(self, value):
+             self.value = value
+     
+         def __add__(self, other):
+             if isinstance(other, Number):
+                 return Number(self.value + other.value)
+             else:
+                 raise ValueError("Unsupported operand type for +")
+     
+         def __str__(self):
+             return str(self.value)
+     
+     # Create instances of Number
+     num1 = Number(5)
+     num2 = Number(3)
+     
+     # Use the overloaded + operator
+     result = num1 + num2
+     print("Result:", result)  # Output: Result: 8
+     </code></pre>
+     <ul>
      <li>Overloading Unary Operators</li>
+     </ul>
+     <pre class="language-python"><code># Overloading Unary Operator Example
+     
+     class Number:
+         def __init__(self, value):
+             self.value = value
+     
+         def __neg__(self):
+             """Overloading the negation (-) operator."""
+             return Number(-self.value)
+     
+         def __str__(self):
+             """String representation of the Number."""
+             return str(self.value)
+     
+     # Create an instance of Number
+     num = Number(5)
+     
+     # Use the overloaded - operator
+     negated_num = -num
+     print("Original Number:", num)  # Output: Original Number: 5
+     print("Negated Number:", negated_num)  # Output: Negated Number: -5
+     </code></pre>
+     <ul>
      <li>Overloading Comparison Operators</li>
      </ul>
-     <p>----------------------------------CODES-------------------------------------------------------------------</p>
+     <pre class="language-python"><code># Overloading Comparison Operators Example
+     
+     class Person:
+         def __init__(self, age):
+             self.age = age
+     
+         def __eq__(self, other):
+             """Overloading the equality (==) operator."""
+             if isinstance(other, Person):
+                 return self.age == other.age
+             else:
+                 return False
+     
+         def __lt__(self, other):
+             """Overloading the less than (&lt;) operator."""
+             if isinstance(other, Person):
+                 return self.age &lt; other.age
+             else:
+                 raise ValueError("Unsupported operand type for &lt;")
+     
+     # Create instances of Person
+     person1 = Person(25)
+     person2 = Person(30)
+     person3 = Person(25)
+     
+     # Use the overloaded == and &lt; operators
+     equal_result = person1 == person3
+     lt_result = person1 &lt; person2
+     
+     print("Equality Result:", equal_result)  # Output: Equality Result: True
+     print("Less Than Result:", lt_result)  # Output: Less Than Result: True
+     </code></pre>
+     <p>&nbsp;</p>
      <!-- content end -->
 
     </div>

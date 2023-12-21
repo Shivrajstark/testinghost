@@ -135,6 +135,28 @@
      <li>Objects represent tangible entities or concepts based on the class definition.</li>
      <li>Each object has its own state (attributes) and behavior (methods).</li>
      </ul>
+     <pre class="language-python"><code># Object-Oriented Programming with Objects Example
+     
+     # Define a simple class
+     class Car:
+         def __init__(self, make, model, year):
+             """Constructor method to initialize the Car object."""
+             self.make = make
+             self.model = model
+             self.year = year
+     
+         def display_info(self):
+             """Method that displays information about the car."""
+             print(f"{self.year} {self.make} {self.model}")
+     
+     # Create instances (objects) of the Car class
+     car1 = Car("Toyota", "Camry", 2022)
+     car2 = Car("Ford", "Mustang", 2021)
+     
+     # Access attributes and call methods on the instances
+     car1.display_info()  # Output: 2022 Toyota Camry
+     car2.display_info()  # Output: 2021 Ford Mustang
+     </code></pre>
      <h3>Class</h3>
      <ul>
      <li>A class is a blueprint or template for creating objects.</li>
@@ -142,8 +164,31 @@
      <li>It encapsulates attributes (data) and methods (functions) that operate on that data.</li>
      <li>Classes serve as a way to organize and structure code in a modular and reusable manner.</li>
      </ul>
+     <pre class="language-python"><code># Object-Oriented Programming with Class Example
+     
+     # Define a simple class
+     class Circle:
+         def __init__(self, radius):
+             """Constructor method to initialize the Circle object."""
+             self.radius = radius
+     
+         def calculate_area(self):
+             """Method that calculates the area of the circle."""
+             area = 3.14 * self.radius ** 2
+             return area
+     
+     # Create an instance (object) of the Circle class
+     circle_instance = Circle(5)
+     
+     # Access attributes and call methods on the instance
+     radius_value = circle_instance.radius
+     area_value = circle_instance.calculate_area()
+     
+     # Display information
+     print("Radius:", radius_value)  # Output: Radius: 5
+     print("Area:", area_value)  # Output: Area: 78.5
+     </code></pre>
      <p>&nbsp;</p>
-     <p>-----------------------------------------CODES----------------------------------------------------</p>
      <!-- content end -->
 
     </div>

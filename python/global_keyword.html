@@ -132,7 +132,25 @@
      <li>The global keyword is used to indicate that a variable declared inside a function should refer to the global variable of the same name, rather than creating a new local variable with the same name.</li>
      <li>Without the global keyword, if you try to modify a variable inside a function with the same name as a global variable, Python will create a new local variable within the function, and any modifications will only affect the local scope.</li>
      </ul>
-     <p>-------------------------CODE-----------------------------------------</p>
+     <pre class="language-python"><code># Global variable
+     global_variable = 10
+     
+     # Function to modify the global variable
+     def modify_global_variable():
+         global global_variable
+         global_variable = 20
+         print("Inside the function:", global_variable)
+     
+     # Display global variable before and after function call
+     print("Before calling the function:", global_variable)
+     modify_global_variable()
+     print("After calling the function:", global_variable)
+     </code></pre>
+     <pre class="language-python"><code>Before calling the function: 10
+     Inside the function: 20
+     After calling the function: 20
+     </code></pre>
+     <p>&nbsp;</p>
         
      <!-- content end -->
 

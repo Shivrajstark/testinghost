@@ -130,10 +130,9 @@
     <div class="content_box">
      <!-- content start -->
 
-     <h1>Python Datatypes&nbsp;</h1>
-     <p class="MsoNormal" style="text-align: center; line-height: normal; mso-pagination: none;" align="center"><span lang="EN" style="font-size: 12.0pt; font-family: 'Verdana','sans-serif'; mso-fareast-font-family: Verdana; mso-bidi-font-family: Verdana;">&nbsp;</span></p>
+
+     <h3>Python Datatypes&nbsp;<span lang="EN" style="font-size: 12.0pt; font-family: 'Verdana','sans-serif'; mso-fareast-font-family: Verdana; mso-bidi-font-family: Verdana;">&nbsp;</span></h3>
      <p class="MsoNormal" style="margin-bottom: 12.0pt; mso-pagination: none;"><span lang="EN" style="font-size: 12.0pt; line-height: 115%; font-family: 'Verdana','sans-serif'; mso-fareast-font-family: Verdana; mso-bidi-font-family: Verdana;">Variables can hold values and every value has a data type.python is a dynamically typed languages so there is<span style="mso-spacerun: yes;">&nbsp; </span>no need to declare<span style="mso-spacerun: yes;"> </span>its type</span></p>
-     <p class="MsoNormal" style="margin-bottom: 12.0pt; mso-pagination: none;">&nbsp;</p>
      <p class="MsoNormal" style="margin-bottom: 12.0pt; mso-pagination: none;">&nbsp;</p>
      <p class="MsoNormal" style="margin-bottom: 12.0pt; mso-pagination: none;"><span lang="EN" style="font-size: 12.0pt; line-height: 115%; font-family: 'Verdana','sans-serif'; mso-fareast-font-family: Verdana; mso-bidi-font-family: Verdana;">Python support following data types:</span></p>
      <ul>
@@ -145,9 +144,182 @@
      </ul>
      <p>&nbsp;</p>
      <p>Python flexibility with datatypes makes it powerfull and versatile, allowing you to focus on solving problems rather than getting baogged down by type related complexities.</p>
-
-
-
+     <h4>Code Example :</h4>
+     <h3>Numbers&nbsp;</h3>
+     <pre class="language-python"><code># Integer
+     integer_number = 42
+     print("Integer:", integer_number)
+     # Output: Integer: 42
+     
+     # Floating-point
+     float_number = 3.14
+     print("Float:", float_number)
+     # Output: Float: 3.14
+     
+     # Complex number
+     complex_number = 2 + 3j
+     print("Complex:", complex_number)
+     # Output: Complex: (2+3j)
+     
+     # Basic arithmetic operations
+     result_sum = integer_number + float_number
+     result_product = integer_number * complex_number
+     
+     print("Sum:", result_sum)
+     # Output: Sum: 45.14
+     
+     print("Product:", result_product)
+     # Output: Product: (84+126j)
+     </code></pre>
+     <h3>Sequence&nbsp;</h3>
+     <ul>
+     <li>Sequence in list</li>
+     </ul>
+     <pre class="language-python"><code># Creating a list
+     my_list = [1, "two", 3.0, [4, 5], "six"]
+     print("List:", my_list)
+     
+     # Accessing elements in a list
+     print("First element:", my_list[0])
+     # Output: First element: 1
+     
+     print("Sublist:", my_list[3])
+     # Output: Sublist: [4, 5]
+     
+     # Slicing a list
+     print("Sliced elements:", my_list[1:4])
+     # Output: Sliced elements: ['two', 3.0, [4, 5]]
+     
+     # Modifying elements in a list
+     my_list[0] = "One"
+     print("Modified list:", my_list)
+     # Output: Modified list: ['One', 'two', 3.0, [4, 5], 'six']
+     
+     # Appending elements to a list
+     my_list.append(7)
+     print("Appended list:", my_list)
+     # Output: Appended list: ['One', 'two', 3.0, [4, 5], 'six', 7]
+     
+     # Length of a list
+     print("Length of the list:", len(my_list))
+     # Output: Length of the list: 6
+     </code></pre>
+     <ul>
+     <li>Sequence in tuple</li>
+     </ul>
+     <pre class="language-python"><code># Creating a tuple
+     my_tuple = (1, "two", 3.0, (4, 5), "six")
+     print("Tuple:", my_tuple)
+     
+     # Accessing elements in a tuple
+     print("First element:", my_tuple[0])
+     # Output: First element: 1
+     
+     print("Subtuple:", my_tuple[3])
+     # Output: Subtuple: (4, 5)
+     
+     # Slicing a tuple
+     print("Sliced elements:", my_tuple[1:4])
+     # Output: Sliced elements: ('two', 3.0, (4, 5))
+     
+     # Length of a tuple
+     print("Length of the tuple:", len(my_tuple))
+     # Output: Length of the tuple: 5
+     </code></pre>
+     <ul>
+     <li>Sequence in String&nbsp;</li>
+     </ul>
+     <pre class="language-python"><code># Creating a string
+     my_string = "Hello, Python!"
+     print("String:", my_string)
+     
+     # Accessing characters in a string
+     print("First character:", my_string[0])
+     # Output: First character: H
+     
+     print("Substring:", my_string[7:13])
+     # Output: Substring: Python
+     
+     # Length of a string
+     print("Length of the string:", len(my_string))
+     # Output: Length of the string: 13
+     </code></pre>
+     <h3>Sets</h3>
+     <pre class="language-python"><code># Creating a set
+     my_set = {1, 2, 3, 4, 5}
+     print("Set:", my_set)
+     # Output: Set: {1, 2, 3, 4, 5}
+     
+     # Adding elements to a set
+     my_set.add(6)
+     print("Updated set:", my_set)
+     # Output: Updated set: {1, 2, 3, 4, 5, 6}
+     
+     # Removing elements from a set
+     my_set.remove(3)
+     print("Set after removing 3:", my_set)
+     # Output: Set after removing 3: {1, 2, 4, 5, 6}
+     
+     # Set operations
+     set1 = {1, 2, 3, 4}
+     set2 = {3, 4, 5, 6}
+     
+     # Union of sets
+     union_set = set1.union(set2)
+     print("Union of sets:", union_set)
+     # Output: Union of sets: {1, 2, 3, 4, 5, 6}
+     
+     # Intersection of sets
+     intersection_set = set1.intersection(set2)
+     print("Intersection of sets:", intersection_set)
+     # Output: Intersection of sets: {3, 4}
+     
+     # Difference of sets
+     difference_set = set1.difference(set2)
+     print("Difference of sets:", difference_set)
+     # Output: Difference of sets: {1, 2}
+     </code></pre>
+     <h3>None</h3>
+     <pre class="language-python"><code># Assigning None to a variable
+     my_variable = None
+     print("Value of my_variable:", my_variable)
+     # Output: Value of my_variable: None
+     
+     # Checking if a variable is None
+     if my_variable is None:
+         print("The variable is None.")
+     # Output: The variable is None.
+     </code></pre>
+     <h3>Mappings</h3>
+     <pre class="language-python"><code># Creating a dictionary
+     my_dict = {"name": "Alice", "age": 25, "city": "Wonderland"}
+     print("Dictionary:", my_dict)
+     
+     # Accessing values in a dictionary
+     print("Name:", my_dict["name"])
+     # Output: Name: Alice
+     
+     # Modifying values in a dictionary
+     my_dict["age"] = 26
+     print("Updated dictionary:", my_dict)
+     # Output: Updated dictionary: {'name': 'Alice', 'age': 26, 'city': 'Wonderland'}
+     
+     # Adding a new key-value pair to a dictionary
+     my_dict["gender"] = "Female"
+     print("Dictionary after adding gender:", my_dict)
+     # Output: Dictionary after adding gender: {'name': 'Alice', 'age': 26, 'city': 'Wonderland', 'gender': 'Female'}
+     
+     # Removing a key-value pair from a dictionary
+     del my_dict["city"]
+     print("Dictionary after removing city:", my_dict)
+     # Output: Dictionary after removing city: {'name': 'Alice', 'age': 26, 'gender': 'Female'}
+     
+     # Checking if a key is in the dictionary
+     if "age" in my_dict:
+         print("Age is present in the dictionary.")
+     # Output: Age is present in the dictionary.
+     </code></pre>
+     <p>&nbsp;</p>
       <!-- content end -->
 
     </div>

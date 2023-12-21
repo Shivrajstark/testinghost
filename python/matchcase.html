@@ -130,7 +130,23 @@
      <h1>Flow Control&nbsp;</h1>
      <h3>Match case</h3>
      <p><span style="font-size: 12pt;">The match statement aims to provide more expressive and readable pattern matching, similar to what is found in some other programming languages. It can be used to destructure and match values against patterns.</span></p>
-     <p style="font-size: medium; font-weight: 400;">-------------------------CODE--------------------------------------</p>
+     <pre class="language-python"><code># Flow Control with Match Case Example
+     
+     # Define a function with match case
+     def process_data(data):
+         match data:
+             case 1:
+                 print("Processing for case 1")  # Output: Processing for case 1
+             case 2 | 3:
+                 print("Processing for case 2 or 3")  # Output: Processing for case 2 or 3
+             case _:
+                 print("Processing for other cases")  # Output: Processing for other cases
+     
+     # Test the function with different values
+     process_data(1)
+     process_data(3)
+     process_data(5)
+     </code></pre>
      <!-- content end -->
 
     </div>

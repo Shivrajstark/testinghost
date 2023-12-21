@@ -128,30 +128,51 @@
     <div class="content_box">
      <!-- content start -->
      <h1>Scopes in Function</h1>
-     <ul>
-     <li>The term "scope" refers to the region of a program where a particular variable is accessible.</li>
-     <li>Python has several types of scopes, and understanding them is crucial for writing bug-free and maintainable code.</li>
-     </ul>
-     <h4>The two main types of scopes in Python are:</h4>
-     <ul>
-     <li>Local scope&nbsp;</li>
-     <li>Global scope</li>
-     </ul>
-     <h3>Local scope</h3>
-     <ul>
-     <li>Variables defined within a function have a local scope.</li>
-     <li>They are only accessible within that specific function.</li>
-     <li>Once the function execution is complete, the local variables are destroyed, and their scope ceases to exist.</li>
-     </ul>
-     <p>--------------------------CODE---------------------------------</p>
-     <h3>Global scope</h3>
-     <ul>
-     <li>Variables defined outside of any function or block have a global scope.</li>
-     <li>They can be accessed from any part of the code, including functions.</li>
-     <li>Global variables persist throughout the lifetime of the program.</li>
-     </ul>
-     <p>---------------------------CODE_-------------------------------------</p>
-        
+<ul>
+<li>The term "scope" refers to the region of a program where a particular variable is accessible.</li>
+<li>Python has several types of scopes, and understanding them is crucial for writing bug-free and maintainable code.</li>
+</ul>
+<h4>The two main types of scopes in Python are:</h4>
+<ul>
+<li>Local scope&nbsp;</li>
+<li>Global scope</li>
+</ul>
+<h3>Local scope</h3>
+<ul>
+<li>Variables defined within a function have a local scope.</li>
+<li>They are only accessible within that specific function.</li>
+<li>Once the function execution is complete, the local variables are destroyed, and their scope ceases to exist.</li>
+</ul>
+<pre class="language-python"><code>def example_function():
+    # Local variable within the function
+    local_variable = "I am local"
+    print("Inside the function:", local_variable)
+
+# Calling the function
+example_function()
+
+# Attempting to access the local variable outside the function (will result in an error)
+# print("Outside the function:", local_variable)
+</code></pre>
+<h3>Global scope</h3>
+<ul>
+<li>Variables defined outside of any function or block have a global scope.</li>
+<li>They can be accessed from any part of the code, including functions.</li>
+<li>Global variables persist throughout the lifetime of the program.</li>
+</ul>
+<pre class="language-python"><code># Global variable
+global_variable = "I am global"
+
+def example_function():
+    # Accessing the global variable within the function
+    print("Inside the function:", global_variable)
+
+# Calling the function
+example_function()
+
+# Accessing the global variable outside the function
+print("Outside the function:", global_variable)
+</code></pre>
      <!-- content end -->
 
     </div>

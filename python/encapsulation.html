@@ -129,12 +129,31 @@
     <div class="content_box">
      <!-- content start -->
      <h1>Object Oriented Programming</h1>
-     <h3>Encapsulation</h3>
-     <ul>
-     <li>Encapsulation involves bundling data and methods that operate on that data within a single unit, the class.</li>
-     <li>It provides a way to hide the internal implementation details of a class, exposing only what's necessary.</li>
-     <li>Encapsulation helps in maintaining a clean and understandable interface for interacting with objects.</li>
-     </ul>
+<h3>Encapsulation</h3>
+<ul>
+<li>Encapsulation involves bundling data and methods that operate on that data within a single unit, the class.</li>
+<li>It provides a way to hide the internal implementation details of a class, exposing only what's necessary.</li>
+<li>Encapsulation helps in maintaining a clean and understandable interface for interacting with objects.</li>
+</ul>
+<pre class="language-python"><code>class Person:
+    def __init__(self, name, age):
+        self._name = name  # Protected attribute
+        self.__age = age    # Private attribute
+
+    def display_info(self):
+        print(f"Name: {self._name}, Age: {self.__age}")
+
+# Creating an instance of the Person class
+person = Person("Alice", 30)
+
+# Accessing and displaying information
+person.display_info()
+# Output: Name: Alice, Age: 30
+
+# Trying to access private attribute directly (will result in an error)
+# Uncommenting the line below will raise an AttributeError
+# print(person.__age)
+</code></pre>
      <!-- content end -->
 
     </div>

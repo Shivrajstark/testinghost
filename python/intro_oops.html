@@ -142,6 +142,33 @@
      <li>Encapsulation : Encapsulation is the concept of bundling data (attributes) and methods that operate on the data within a single unit (class). It helps in hiding the internal implementation details.</li>
      <li>Polymorphism :&nbsp; Polymorphism allows objects of different classes to be treated as objects of a common base class. It enables flexibility and extensibility in code.</li>
      </ul>
+     <h4>Code Example :</h4>
+     <pre class="language-python"><code># Class definition
+     class Dog:
+         def __init__(self, name, age):
+             """This is the constructor method that initializes the Dog object."""
+             self.name = name
+             self.age = age
+     
+         def bark(self):
+             """This method makes the dog bark."""
+             print("Woof!")
+     
+         def info(self):
+             """This method prints information about the dog."""
+             print(f"{self.name} is {self.age} years old.")
+     
+     # Creating instances of the Dog class
+     dog1 = Dog("Buddy", 3)
+     dog2 = Dog("Max", 5)
+     
+     # Accessing attributes and calling methods
+     dog1.info()  # Output: Buddy is 3 years old.
+     dog1.bark()  # Output: Woof!
+     
+     dog2.info()  # Output: Max is 5 years old.
+     dog2.bark()  # Output: Woof!
+     </code></pre>
      <!-- content end -->
 
     </div>

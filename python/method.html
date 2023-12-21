@@ -134,6 +134,34 @@
      <li>They encapsulate the behavior or actions that objects of the class can perform.</li>
      <li>Methods are essential for implementing the functionality associated with a class.</li>
      </ul>
+     <pre class="language-python"><code># Object-Oriented Programming with Methods Example
+     
+     # Define a simple class
+     class Dog:
+         def __init__(self, name, age):
+             """Constructor method to initialize the Dog object."""
+             self.name = name
+             self.age = age
+     
+         def bark(self):
+             """Method that makes the dog bark."""
+             print(f"{self.name} says Woof!")
+     
+         def info(self):
+             """Method that prints information about the dog."""
+             print(f"{self.name} is {self.age} years old.")
+     
+     # Create instances of the Dog class
+     dog1 = Dog("Buddy", 3)
+     dog2 = Dog("Max", 5)
+     
+     # Call methods on the instances
+     dog1.bark()  # Output: Buddy says Woof!
+     dog2.info()  # Output: Max is 5 years old.
+     </code></pre>
+     <pre class="language-python"><code>Buddy says Woof!
+     Max is 5 years old.
+     </code></pre>
      <p>&nbsp;</p>
      <!-- content end -->
 

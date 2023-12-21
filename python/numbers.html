@@ -128,45 +128,147 @@
     <div class="content_box">
      <!-- content start -->
    
-
-<h1 style="color: #000000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Numbers</h1>
-<ul>
-<li>Numbers are a fundamental data type used to represent numeric values.</li>
-<li>Numbers play a crucial role in various computations, mathematical operations, and scientific applications in Python.</li>
-</ul>
-<h4>There are three main types of numbers in Python:</h4>
-<ul>
-<li>Integers ( int ) : Integers&nbsp;represent whole numbers without any decimal points.<span style="border: 0px solid #d9d9e3; box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; font-weight: 600; color: var(--tw-prose-bold);"><br /></span></li>
-<li>Floating-point numbers (float) : Floating-point numbers represent real numbers with decimal points.</li>
-<li>Complex numbers (complex) : Complex numbers consist of a real part and an imaginary part, both represented as floating-point numbers.</li>
-</ul>
-<h4>Key features of numbers in Python:</h4>
-<ul>
-<li>Dynamic Typing</li>
-<li>Arithmetic Operations</li>
-<li>Type Conversion</li>
-<li>Mathematical Functions</li>
-</ul>
-<h3>Dynamic Typing&nbsp;</h3>
-<ul>
-<li>Python is dynamically typed, which means you don't need to explicitly specify the data type of a variable. The interpreter determines the type during runtime.</li>
-</ul>
-<p>------------------------------CODE-------------------------------------</p>
-<h3>Arithmetic Operations</h3>
-<ul>
-<li>Numbers support common arithmetic operations such as addition (+), subtraction (-), multiplication (*), division (/), and more.</li>
-</ul>
-<p>------------------------------CODE-------------------------------------</p>
-<h3>Type conversion</h3>
-<ul>
-<li>You can convert between different numeric types using type conversion functions like int(), float(), and complex().</li>
-</ul>
-<p>------------------------------CODE-------------------------------------</p>
-<h3>Mathematical Functions</h3>
-<ul>
-<li>Python provides a rich set of mathematical functions and constants in the math module. For example, math.sqrt(), math.sin(), math.pi.</li>
-</ul>
-<p>------------------------------CODE-------------------------------------</p>
+     <h1 style="color: #000000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Numbers</h1>
+     <ul>
+     <li>Numbers are a fundamental data type used to represent numeric values.</li>
+     <li>Numbers play a crucial role in various computations, mathematical operations, and scientific applications in Python.</li>
+     </ul>
+     <h4>There are three main types of numbers in Python:</h4>
+     <ul>
+     <li>Integers ( int ) : Integers&nbsp;represent whole numbers without any decimal points.<span style="border: 0px solid #d9d9e3; box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; font-weight: 600; color: var(--tw-prose-bold);"><br /></span></li>
+     <li>Floating-point numbers (float) : Floating-point numbers represent real numbers with decimal points.</li>
+     <li>Complex numbers (complex) : Complex numbers consist of a real part and an imaginary part, both represented as floating-point numbers.</li>
+     </ul>
+     <h4>Key features of numbers in Python:</h4>
+     <ul>
+     <li>Dynamic Typing</li>
+     <li>Arithmetic Operations</li>
+     <li>Type Conversion</li>
+     <li>Mathematical Functions</li>
+     </ul>
+     <h3>Dynamic Typing&nbsp;</h3>
+     <ul>
+     <li>Python is dynamically typed, which means you don't need to explicitly specify the data type of a variable. The interpreter determines the type during runtime.</li>
+     </ul>
+     <pre class="language-python"><code># Dynamic Typing with Numbers Example
+     
+     # Assign an integer to a variable
+     number_variable = 42
+     print("Value:", number_variable, "Type:", type(number_variable))  # Output: Value: 42 Type: &lt;class 'int'&gt;
+     
+     # Assign a float to the same variable
+     number_variable = 3.14
+     print("Value:", number_variable, "Type:", type(number_variable))  # Output: Value: 3.14 Type: &lt;class 'float'&gt;
+     
+     # Assign a complex number to the same variable
+     number_variable = 2 + 5j
+     print("Value:", number_variable, "Type:", type(number_variable))  # Output: Value: (2+5j) Type: &lt;class 'complex'&gt;
+     </code></pre>
+     <h3>Arithmetic Operations</h3>
+     <ul>
+     <li>Numbers support common arithmetic operations such as addition (+), subtraction (-), multiplication (*), division (/), and more.</li>
+     </ul>
+     <pre class="language-python"><code># Arithmetic Operations Example
+     
+     # Addition
+     result_addition = 5 + 3
+     print("Addition:", result_addition)  # Output: Addition: 8
+     
+     # Subtraction
+     result_subtraction = 9 - 4
+     print("Subtraction:", result_subtraction)  # Output: Subtraction: 5
+     
+     # Multiplication
+     result_multiplication = 6 * 7
+     print("Multiplication:", result_multiplication)  # Output: Multiplication: 42
+     
+     # Division
+     result_division = 20 / 4
+     print("Division:", result_division)  # Output: Division: 5.0
+     
+     # Floor Division
+     result_floor_division = 20 // 3
+     print("Floor Division:", result_floor_division)  # Output: Floor Division: 6
+     
+     # Modulo (Remainder)
+     result_modulo = 17 % 5
+     print("Modulo:", result_modulo)  # Output: Modulo: 2
+     
+     # Exponentiation
+     result_exponentiation = 2 ** 3
+     print("Exponentiation:", result_exponentiation)  # Output: Exponentiation: 8
+     </code></pre>
+     <h3>Type conversion</h3>
+     <ul>
+     <li>You can convert between different numeric types using type conversion functions like int(), float(), and complex().</li>
+     </ul>
+     <pre class="language-python"><code># Type Conversion Example
+     
+     # Integer to Float
+     integer_value = 42
+     float_value = float(integer_value)
+     print("Integer to Float:", float_value)  # Output: Integer to Float: 42.0
+     
+     # Float to Integer
+     float_value = 3.14
+     integer_value = int(float_value)
+     print("Float to Integer:", integer_value)  # Output: Float to Integer: 3
+     
+     # Integer to String
+     integer_value = 123
+     string_value = str(integer_value)
+     print("Integer to String:", string_value)  # Output: Integer to String: 123
+     
+     # String to Integer
+     string_value = "456"
+     integer_value = int(string_value)
+     print("String to Integer:", integer_value)  # Output: String to Integer: 456
+     
+     # Float to String
+     float_value = 7.5
+     string_value = str(float_value)
+     print("Float to String:", string_value)  # Output: Float to String: 7.5
+     
+     # String to Float
+     string_value = "9.99"
+     float_value = float(string_value)
+     print("String to Float:", float_value)  # Output: String to Float: 9.99
+     </code></pre>
+     <h3>Mathematical Functions</h3>
+     <ul>
+     <li>Python provides a rich set of mathematical functions and constants in the math module. For example, math.sqrt(), math.sin(), math.pi.</li>
+     </ul>
+     <pre class="language-python"><code># Mathematical Functions Example
+     
+     # Import the math module
+     import math
+     
+     # Square root
+     sqrt_result = math.sqrt(25)
+     print("Square Root:", sqrt_result)  # Output: Square Root: 5.0
+     
+     # Power
+     power_result = math.pow(2, 3)
+     print("Power:", power_result)  # Output: Power: 8.0
+     
+     # Absolute value
+     abs_result = math.fabs(-7.5)
+     print("Absolute Value:", abs_result)  # Output: Absolute Value: 7.5
+     
+     # Ceiling (smallest integer greater than or equal to a number)
+     ceil_result = math.ceil(4.3)
+     print("Ceiling:", ceil_result)  # Output: Ceiling: 5
+     
+     # Floor (largest integer less than or equal to a number)
+     floor_result = math.floor(4.9)
+     print("Floor:", floor_result)  # Output: Floor: 4
+     
+     # Trigonometric functions
+     sin_result = math.sin(math.radians(30))  # Convert degrees to radians for trigonometric functions
+     cos_result = math.cos(math.radians(60))
+     print("Sine (30 degrees):", sin_result)  # Output: Sine (30 degrees): 0.49999999999999994
+     print("Cosine (60 degrees):", cos_result)  # Output: Cosine (60 degrees): 0.5000000000000001
+     </code></pre>
      <!-- content end -->
 
     </div>

@@ -143,33 +143,95 @@
      <ul>
      <li>You can create a new directory using the os.makedirs() function</li>
      </ul>
-     <p>-------------------------CODE----------------------------------------</p>
+     <pre class="language-python"><code>import os
+     
+     # Specify the directory path
+     directory_path = "/path/to/your/directory"
+     
+     # Create the directory
+     os.makedirs(directory_path)
+     </code></pre>
      <h4>Checking if Directory exists</h4>
      <ul>
      <li>To check if a directory exists, you can use os.path.exists()</li>
      </ul>
-     <p>-------------------------CODE------------------------------</p>
+     <pre class="language-python"><code>import os
+     
+     # Specify the directory path
+     directory_path = "/path/to/your/directory"
+     
+     # Check if the directory exists
+     if os.path.exists(directory_path) and os.path.isdir(directory_path):
+         print(f"The directory '{directory_path}' exists.")
+     else:
+         print(f"The directory '{directory_path}' does not exist.")
+     </code></pre>
      <h4>Changing with current working Directory</h4>
      <ul>
      <li>You can change the current working directory using os.chdir()</li>
      </ul>
-     <p>-------------------------CODE----------------------------</p>
+     <pre class="language-python"><code>import os
+     
+     # Specify the directory path
+     new_directory_path = "/path/to/your/new/directory"
+     
+     # Change the current working directory
+     os.chdir(new_directory_path)
+     
+     # Print the new current working directory
+     print("Current working directory:", os.getcwd())
+     </code></pre>
      <h4>Listing Files and Directories&nbsp;</h4>
      <ul>
      <li>To list the contents of a directory, you can use os.listdir()</li>
      </ul>
-     <p>-------------------------CODE----------------------------</p>
+     <pre class="language-python"><code>import os
+     
+     # Specify the directory path
+     directory_path = "/path/to/your/directory"
+     
+     # List files and directories in the specified directory
+     file_list = os.listdir(directory_path)
+     
+     # Print the list
+     print("Files and directories in", directory_path)
+     for item in file_list:
+         print(item)
+     </code></pre>
      <h4>Removing a Directories</h4>
      <ul>
      <li>You can remove a directory using os.rmdir()</li>
      </ul>
-     <p>-------------------------CODE----------------------------</p>
+     <pre class="language-python"><code>import os
+     
+     # Specify the directory path to be removed
+     directory_path = "/path/to/your/directory"
+     
+     # Remove the directory
+     try:
+         os.rmdir(directory_path)
+         print(f"Directory '{directory_path}' removed successfully.")
+     except OSError as e:
+         print(f"Error: {e}")
+     </code></pre>
      <p>&nbsp;</p>
      <h3>Using os.path.join() for Platform Independence</h3>
      <ul>
      <li>When working with paths, it's a good practice to use os.path.join() to join directory and file names, making your code platform-independent</li>
      </ul>
-     <p>-------------------------------------------CODES-----------------------------------------------------</p>
+     <pre class="language-python"><code>import os
+     
+     # Specify directory and file names
+     base_directory = "/path/to/your"
+     subdirectory = "example_directory"
+     file_name = "example_file.txt"
+     
+     # Use os.path.join() to create the full path
+     full_path = os.path.join(base_directory, subdirectory, file_name)
+     
+     # Print the full path
+     print("Full path:", full_path)
+     </code></pre>
      <!-- content end -->
 
     </div>

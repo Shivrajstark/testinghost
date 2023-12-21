@@ -134,7 +134,23 @@
      <li>It facilitates code reuse, as the child class can leverage the functionality of the parent class.</li>
      <li>Inheritance supports the creation of hierarchical relationships between classes.</li>
      </ul>
-     <p>&nbsp;</p>
+     <pre class="language-python"><code># Base class
+     class Animal:
+         def speak(self):
+             print("Animal speaks")
+     
+     # Derived class (inherits from Animal)
+     class Dog(Animal):
+         def bark(self):
+             print("Dog barks")
+     
+     # Create an instance of the derived class
+     dog_instance = Dog()
+     
+     # Access methods from both base and derived classes
+     dog_instance.speak()  # Output: Animal speaks
+     dog_instance.bark()   # Output: Dog barks
+     </code></pre>
      <!-- content end -->
 
     </div>

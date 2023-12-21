@@ -128,14 +128,26 @@
     <div class="content_box">
      <!-- content start -->
      <h1>Introduction of Function</h1>
-<ul>
-<li>A function is a block of reusable code that performs a specific task.</li>
-<li>Functions are defined using the def keyword, followed by the function name, a pair of parentheses, and a colon.</li>
-<li>Any input parameters the function takes are specified within the parentheses.</li>
-<li>The body of the function is indented below the definition.</li>
-</ul>
-<p>---------------CODE_----------------------------------</p>
-<p>&nbsp;</p>
+     <ul>
+     <li>A function is a block of reusable code that performs a specific task.</li>
+     <li>Functions are defined using the def keyword, followed by the function name, a pair of parentheses, and a colon.</li>
+     <li>Any input parameters the function takes are specified within the parentheses.</li>
+     <li>The body of the function is indented below the definition.</li>
+     </ul>
+     <pre class="language-python"><code># Function definition
+     def greet(name):
+         """This function greets the person passed in as a parameter."""
+         print("Hello, " + name + "!")
+     
+     # Get user input
+     user_name = input("Enter your name: ")
+     
+     # Function call with user input
+     greet(user_name)
+     </code></pre>
+     <pre class="language-python"><code>Enter your name: [user enters their name, let's say "Bob"]
+     Hello, Bob!
+     </code></pre>
         
      <!-- content end -->
 

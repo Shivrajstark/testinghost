@@ -128,44 +128,189 @@
     <div class="content_box">
      <!-- content start -->
     
-<h1 style="color: #000000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Exception</h1>
-<ul>
-<li>An exception is an event that occurs during the execution of a program that disrupts the normal flow of instructions.</li>
-<li>When an exception occurs, the program's normal execution is halted, and the control is transferred to an appropriate exception-handling block.</li>
-</ul>
-<h4>Types of Exceptions :</h4>
-<ul>
-<li>Handling Exceptions</li>
-<li>Handling Multiple Exceptions</li>
-<li>Handling All Exceptions</li>
-<li>Using else and finally</li>
-<li>Raising Exceptions</li>
-</ul>
-<h3>Handling Exceptions</h3>
-<ul>
-<li>You can use a try...except block to handle exceptions in Python</li>
-</ul>
-<p>----------------------CODE------------------------------</p>
-<h3>Handling Multiple Exceptions</h3>
-<ul>
-<li>You can handle multiple exceptions by specifying them in a tuple</li>
-</ul>
-<p>----------------------CODE------------------------------</p>
-<h3>Handling All Exceptions</h3>
-<ul>
-<li>You can use a generic except block to catch any exception</li>
-</ul>
-<p>----------------------CODE------------------------------</p>
-<h3>Using else and finally</h3>
-<ul>
-<li>The else block is executed if no exceptions are raised in the try block</li>
-</ul>
-<p>----------------------CODE------------------------------</p>
-<h3>Raising Exceptions</h3>
-<ul>
-<li>You can raise exceptions explicitly using the raise statement</li>
-</ul>
-<p>----------------------CODE------------------------------</p>
+     <h1 style="color: #000000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Exception</h1>
+     <ul>
+     <li>An exception is an event that occurs during the execution of a program that disrupts the normal flow of instructions.</li>
+     <li>When an exception occurs, the program's normal execution is halted, and the control is transferred to an appropriate exception-handling block.</li>
+     </ul>
+     <h4>Types of Exceptions :</h4>
+     <ul>
+     <li>Handling Exceptions</li>
+     <li>Handling Multiple Exceptions</li>
+     <li>Handling All Exceptions</li>
+     <li>Using else and finally</li>
+     <li>Raising Exceptions</li>
+     </ul>
+     <h3>Handling Exceptions</h3>
+     <ul>
+     <li>You can use a try...except block to handle exceptions in Python</li>
+     </ul>
+     <pre class="language-python"><code>def divide_numbers(dividend, divisor):
+         try:
+             # Try to perform division
+             result = dividend / divisor
+             print("Division result:", result)
+         except ZeroDivisionError:
+             # Handle the case where division by zero occurs
+             print("Error: Cannot divide by zero!")
+         except TypeError:
+             # Handle the case where the operands have incompatible types
+             print("Error: Invalid operand types.")
+     
+     # Example 1: Valid division
+     divide_numbers(10, 2)
+     # Output: Division result: 5.0
+     
+     # Example 2: Division by zero
+     divide_numbers(10, 0)
+     # Output: Error: Cannot divide by zero!
+     
+     # Example 3: Invalid operand types
+     divide_numbers("abc", 2)
+     # Output: Error: Invalid operand types.
+     </code></pre>
+     <h3>Handling Multiple Exceptions</h3>
+     <ul>
+     <li>You can handle multiple exceptions by specifying them in a tuple</li>
+     </ul>
+     <pre class="language-python"><code>def divide_numbers(dividend, divisor):
+         try:
+             # Try to perform division
+             result = dividend / divisor
+             print("Division result:", result)
+         except ZeroDivisionError:
+             # Handle the case where division by zero occurs
+             print("Error: Cannot divide by zero!")
+         except TypeError:
+             # Handle the case where the operands have incompatible types
+             print("Error: Invalid operand types.")
+         except Exception as e:
+             # Handle other exceptions (generic exception handler)
+             print(f"An unexpected error occurred: {e}")
+     
+     # Example 1: Valid division
+     divide_numbers(10, 2)
+     # Output: Division result: 5.0
+     
+     # Example 2: Division by zero
+     divide_numbers(10, 0)
+     # Output: Error: Cannot divide by zero!
+     
+     # Example 3: Invalid operand types
+     divide_numbers("abc", 2)
+     # Output: Error: Invalid operand types.
+     
+     # Example 4: Another unexpected exception
+     divide_numbers(10, "def")
+     # Output: An unexpected error occurred: unsupported operand type(s) for /: 'int' and 'str'
+     </code></pre>
+     <h3>Handling All Exceptions</h3>
+     <ul>
+     <li>You can use a generic except block to catch any exception</li>
+     </ul>
+     <pre class="language-python"><code>def divide_numbers(dividend, divisor):
+         try:
+             # Try to perform division
+             result = dividend / divisor
+             print("Division result:", result)
+         except Exception as e:
+             # Handle any type of exception
+             print(f"An unexpected error occurred: {e}")
+     
+     # Example 1: Valid division
+     divide_numbers(10, 2)
+     # Output: Division result: 5.0
+     
+     # Example 2: Division by zero
+     divide_numbers(10, 0)
+     # Output: An unexpected error occurred: division by zero
+     
+     # Example 3: Invalid operand types
+     divide_numbers("abc", 2)
+     # Output: An unexpected error occurred: unsupported operand type(s) for /: 'str' and 'int'
+     
+     # Example 4: Another unexpected exception
+     divide_numbers(10, "def")
+     # Output: An unexpected error occurred: unsupported operand type(s) for /: 'int' and 'str'
+     </code></pre>
+     <h3>Using else and finally</h3>
+     <ul>
+     <li>The else block is executed if no exceptions are raised in the try block</li>
+     </ul>
+     <pre class="language-python"><code>def divide_numbers(dividend, divisor):
+         try:
+             # Try to perform division
+             result = dividend / divisor
+         except ZeroDivisionError:
+             # Handle the case where division by zero occurs
+             print("Error: Cannot divide by zero!")
+         except TypeError:
+             # Handle the case where the operands have incompatible types
+             print("Error: Invalid operand types.")
+         else:
+             # This block is executed if no exception occurs
+             print("Division result:", result)
+         finally:
+             # This block is always executed, whether an exception occurred or not
+             print("Exception handling complete.")
+     
+     # Example 1: Valid division
+     divide_numbers(10, 2)
+     # Output: Division result: 5.0
+     # Output: Exception handling complete.
+     
+     # Example 2: Division by zero
+     divide_numbers(10, 0)
+     # Output: Error: Cannot divide by zero!
+     # Output: Exception handling complete.
+     
+     # Example 3: Invalid operand types
+     divide_numbers("abc", 2)
+     # Output: Error: Invalid operand types.
+     # Output: Exception handling complete.
+     
+     # Example 4: Another unexpected exception
+     divide_numbers(10, "def")
+     # Output: Exception handling complete.
+     # Output: An unexpected error occurred: unsupported operand type(s) for /: 'int' and 'str'
+     </code></pre>
+     <h3>Raising Exceptions</h3>
+     <ul>
+     <li>You can raise exceptions explicitly using the raise statement</li>
+     </ul>
+     <pre class="language-python"><code>def check_positive_number(value):
+         # Check if the input is a number (int or float)
+         if not isinstance(value, (int, float)):
+             raise TypeError("Input must be a number")
+     
+         # Check if the number is positive
+         if value &lt;= 0:
+             raise ValueError("Input must be a positive number")
+     
+         return value
+     
+     try:
+         # Example 1: Valid positive number
+         positive_number = check_positive_number(5)
+         print("Valid positive number:", positive_number)
+         # Output: Valid positive number: 5
+     
+         # Example 2: Invalid type (raises TypeError)
+         invalid_type = check_positive_number("abc")
+         print("This line will not be reached due to the raised exception")
+         # Output: TypeError: Input must be a number
+     
+     except TypeError as e:
+         # Handle TypeError
+         print(f"TypeError: {e}")
+         # Output: TypeError: Input must be a number
+     
+     except ValueError as e:
+         # Handle ValueError
+         print(f"ValueError: {e}")
+         # This block will not be executed in this example
+     </code></pre>
+     <p>&nbsp;</p>
      <!-- content end -->
 
     </div>

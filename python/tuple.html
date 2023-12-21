@@ -146,22 +146,56 @@
      <li>Tuples maintain the order of elements as they are inserted.</li>
      <li>Elements are accessed using indices, similar to lists.</li>
      </ul>
-     <p>--------------------------------CODE--------------------------------</p>
+     <pre class="language-python"><code># Creating an ordered tuple
+     ordered_tuple = (3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5)
+     
+     # Accessing elements by index
+     first_element = ordered_tuple[0]  # 3
+     second_element = ordered_tuple[1]  # 1
+     last_element = ordered_tuple[-1]   # 5
+     
+     # Slicing to create sub-tuples
+     sub_tuple = ordered_tuple[2:5]  # (4, 1, 5)
+     </code></pre>
      <h3>Immutable</h3>
      <ul>
      <li>Tuples are immutable, meaning once they are created, their elements cannot be modified or changed.</li>
      </ul>
-     <p>----------------------------------CODE----------------------------</p>
+     <pre class="language-python"><code># Creating an immutable tuple
+     my_tuple = (1, 2, 3, 4, 5)
+     
+     # Accessing elements by index
+     first_element = my_tuple[0]  # 1
+     second_element = my_tuple[1]  # 2
+     
+     # Attempting to modify the tuple (will result in an error)
+     # my_tuple[0] = 6  # TypeError: 'tuple' object does not support item assignment
+     
+     # Creating a new tuple by concatenating two tuples
+     new_tuple = my_tuple + (6, 7, 8)
+     
+     # Slicing to create a sub-tuple
+     sub_tuple = my_tuple[1:4]  # (2, 3, 4)
+     </code></pre>
      <h3>Length</h3>
      <ul>
      <li>You can find the number of elements in a tuple using the len() function.</li>
      </ul>
-     <p>----------------------------------CODE--------------------------------</p>
+     <pre class="language-python"><code># Creating a tuple
+     my_tuple = (1, 2, 3, 4, 5)
+     
+     # Getting the length of the tuple
+     tuple_length = len(my_tuple)
+     
+     # Displaying the result with comments
+     print("Original Tuple:", my_tuple)  # Output: Original Tuple: (1, 2, 3, 4, 5)
+     print("Length of the tuple:", tuple_length)  # Output: Length of the tuple: 5
+     </code></pre>
      <h3>Common Operations</h3>
      <ul>
      <li>Various operations can be performed on tuples, such as slicing, concatenation, and repetition.</li>
      </ul>
-     <p>----------------------------------CODE---------------------------</p>
+     <p>&nbsp;</p>
      <div class="flex items-center relative text-gray-200 bg-gray-800 dark:bg-token-surface-primary px-4 py-2 text-xs font-sans justify-between rounded-t-md" style="border: 0px solid #d9d9e3; box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; position: relative; display: flex; align-items: center; justify-content: space-between; border-top-left-radius: 0.375rem; border-top-right-radius: 0.375rem; --tw-bg-opacity: 1; background-color: var(--surface-primary); padding: 0.5rem 1rem; font-family: S&ouml;hne, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 0.75rem; line-height: 1rem; --tw-text-opacity: 1; color: rgba(217,217,227,var(--tw-text-opacity));">&nbsp;</div>
      <!-- content end -->
 

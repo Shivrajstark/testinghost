@@ -128,25 +128,38 @@
     <div class="content_box">
      <!-- content start -->
      <h1><span lang="EN">Type coversion</span></h1>
-     <p><span lang="EN"><span lang="EN">Python defines type conversion functions to directly convert one data type to another which is useful in day-to-day and competitive programming. This article is aimed at providing information about certain conversion functions.</span></span></p>
-     <p>&nbsp;</p>
-     <h4 class="MsoNormal" style="margin-bottom: 8.0pt; background: white;"><span lang="EN">There are two types of Type Conversion in python</span></h4>
-     <ol>
-     <li><span lang="EN">Python Implicit Type Conversion</span></li>
-     <li><span lang="EN">Python Explicit Type Conversion</span></li>
-     </ol>
-     <h3>&nbsp;</h3>
-     <h3>&nbsp;</h3>
-     <h3 style="margin: 0cm; margin-bottom: .0001pt; mso-pagination: widow-orphan; page-break-after: auto; background: white;"><span lang="EN">Implicit Type Conversion in Python</span></h3>
-     <p>&nbsp;</p>
-     <p class="MsoNormal" style="margin-bottom: 8.0pt; background: white;"><span lang="EN">In Implicit type conversion of data types in Python, the Python interpreter automatically converts one data type to another without any user involvement</span></p>
-     <p class="MsoNormal" style="margin-bottom: 8.0pt; background: white;">&nbsp;</p>
-     <h3 style="margin: 0cm; margin-bottom: .0001pt; mso-pagination: widow-orphan; page-break-after: auto; background: white;"><span lang="EN">Explicit Type Conversion in Python</span></h3>
-     <p>&nbsp;</p>
-     <p class="MsoNormal" style="margin-bottom: 8.0pt; background: white;"><span lang="EN">In Explicit Type Conversion in Python, the data type is manually changed by the user as per their requirement. With explicit type conversion, there is a risk of data loss since we are forcing an expression to be changed in some specific data type.</span></p>
-     <p>&nbsp;</p>
+<p><span lang="EN"><span lang="EN">Python defines type conversion functions to directly convert one data type to another which is useful in day-to-day and competitive programming. This article is aimed at providing information about certain conversion functions.</span></span></p>
+<h4 class="MsoNormal" style="margin-bottom: 8.0pt; background: white;"><span lang="EN">There are two types of Type Conversion in python</span></h4>
+<ol>
+<li><span lang="EN">Python Implicit Type Conversion</span></li>
+<li><span lang="EN">Python Explicit Type Conversion</span></li>
+</ol>
+<h3 style="margin: 0cm; margin-bottom: .0001pt; mso-pagination: widow-orphan; page-break-after: auto; background: white;"><span lang="EN">Implicit Type Conversion in Python</span></h3>
+<p class="MsoNormal" style="margin-bottom: 8.0pt; background: white;"><span lang="EN">In Implicit type conversion of data types in Python, the Python interpreter automatically converts one data type to another without any user involvement</span></p>
+<pre class="language-python"><code># Define an integer variable
+num_int = 10
 
+# Define a float variable
+num_float = 5.5
 
+# Perform addition, and Python implicitly converts num_int to float before the operation
+result = num_int + num_float
+
+# Print the result
+print(result)
+</code></pre>
+<h3 style="margin: 0cm; margin-bottom: .0001pt; mso-pagination: widow-orphan; page-break-after: auto; background: white;"><span lang="EN">Explicit Type Conversion in Python</span></h3>
+<p class="MsoNormal" style="margin-bottom: 8.0pt; background: white;"><span lang="EN">In Explicit Type Conversion in Python, the data type is manually changed by the user as per their requirement. With explicit type conversion, there is a risk of data loss since we are forcing an expression to be changed in some specific data type.</span></p>
+<pre class="language-python"><code># Define a float variable
+num_float = 5.5
+
+# Explicitly convert the float to an integer
+num_int = int(num_float)
+
+# Print the result
+print(num_int)
+</code></pre>
+     <!-- content end -->
 
     </div>
 

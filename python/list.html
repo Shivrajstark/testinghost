@@ -128,47 +128,112 @@
     <div class="content_box">
      <!-- content start -->
      <h1>List&nbsp;</h1>
-<ul>
-<li>Lists are a fundamental and powerful data structure in Python, and they are widely used for various purposes, from simple storage of elements to complex data manipulation and processing.</li>
-<li>A list is a versatile and mutable data structure that can hold an ordered collection of items.</li>
-<li>Lists are defined by enclosing the elements in square brackets [ ] and separating them with commas.</li>
-</ul>
-<h4>Key features of lists:</h4>
-<ul>
-<li>Ordered</li>
-<li>Mutable</li>
-<li>Dynamic</li>
-<li>Common Opreations</li>
-<li>Length</li>
-</ul>
-<p>&nbsp;</p>
-<h3>Ordered</h3>
-<ul>
-<li>Lists maintain the order of elements as they are inserted.</li>
-<li>You can access elements by their index.</li>
-</ul>
-<p>--------------------------------CODE--------------------------------</p>
-<h3>Mutable</h3>
-<ul>
-<li>Lists can be modified after creation. You can change, add, or remove elements.</li>
-</ul>
-<p>----------------------------------CODE----------------------------</p>
-<h3>Dynamic</h3>
-<ul>
-<li>Lists in Python can grow or shrink in size dynamically.</li>
-</ul>
-<p>----------------------------------CODE--------------------------------</p>
-<h3>Common Operations</h3>
-<ul>
-<li>Various operations can be performed on lists, such as slicing, concatenation, and repetition.</li>
-</ul>
-<p>----------------------------------CODE---------------------------</p>
-<h3>Length</h3>
-<ul>
-<li>You can find the number of elements in a list using the len() function.</li>
-</ul>
-<p>----------------------------------CODE----------------------------</p>
-<div class="flex items-center relative text-gray-200 bg-gray-800 dark:bg-token-surface-primary px-4 py-2 text-xs font-sans justify-between rounded-t-md" style="border: 0px solid #d9d9e3; box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; position: relative; display: flex; align-items: center; justify-content: space-between; border-top-left-radius: 0.375rem; border-top-right-radius: 0.375rem; --tw-bg-opacity: 1; background-color: var(--surface-primary); padding: 0.5rem 1rem; font-family: S&ouml;hne, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 0.75rem; line-height: 1rem; --tw-text-opacity: 1; color: rgba(217,217,227,var(--tw-text-opacity));">&nbsp;</div>
+     <ul>
+     <li>Lists are a fundamental and powerful data structure in Python, and they are widely used for various purposes, from simple storage of elements to complex data manipulation and processing.</li>
+     <li>A list is a versatile and mutable data structure that can hold an ordered collection of items.</li>
+     <li>Lists are defined by enclosing the elements in square brackets [ ] and separating them with commas.</li>
+     </ul>
+     <h4>Key features of lists:</h4>
+     <ul>
+     <li>Ordered</li>
+     <li>Mutable</li>
+     <li>Dynamic</li>
+     <li>Common Opreations</li>
+     <li>Length</li>
+     </ul>
+     <p>&nbsp;</p>
+     <h3>Ordered</h3>
+     <ul>
+     <li>Lists maintain the order of elements as they are inserted.</li>
+     <li>You can access elements by their index.</li>
+     </ul>
+     <pre class="language-python"><code># Ordered List Example
+     
+     # Define an ordered list
+     numbers = [1, 2, 3, 4, 5]
+     
+     # Print the ordered list
+     print("Ordered List:", numbers)
+     </code></pre>
+     <h3>Mutable</h3>
+     <ul>
+     <li>Lists can be modified after creation. You can change, add, or remove elements.</li>
+     </ul>
+     <pre class="language-python"><code># Define a mutable list
+     numbers = [1, 2, 3, 4, 5]  # No output, list creation
+     
+     # Print the original list
+     print("Original List:", numbers)  # Output: Original List: [1, 2, 3, 4, 5]
+     
+     # Modify the list (add an element)
+     numbers.append(6)  # No output, list modification
+     
+     # Print the modified list
+     print("Modified List:", numbers)  # Output: Modified List: [1, 2, 3, 4, 5, 6]
+     </code></pre>
+     <h3>Dynamic</h3>
+     <ul>
+     <li>Lists in Python can grow or shrink in size dynamically.</li>
+     </ul>
+     <pre class="language-python"><code># Dynamic List Example
+     
+     # Create an empty dynamic list
+     dynamic_list = []  # No output, empty list creation
+     
+     # Get user input to populate the list
+     num_elements = int(input("Enter the number of elements: "))
+     
+     for i in range(num_elements):
+         element = input(f"Enter element {i + 1}: ")
+         dynamic_list.append(element)  # No output, list modification
+     
+     # Print the dynamic list
+     print("Dynamic List:", dynamic_list)  # Output: Dynamic List: [element1, element2, ..., elementN]
+     </code></pre>
+     <h3>Common Operations</h3>
+     <ul>
+     <li>Various operations can be performed on lists, such as slicing, concatenation, and repetition.</li>
+     </ul>
+     <pre class="language-python"><code># Create a sample list
+     my_list = [1, 2, 3, 4, 5]  # No output, list creation
+     
+     # Accessing elements and modifying
+     first_element = my_list[0]  # Output: Accessing the first element
+     my_list[2] = 10  # No output, modifying an element
+     
+     # Appending an element
+     my_list.append(6)  # Output: Appending 6 to the list
+     
+     # Removing and getting length
+     removed_element = my_list.pop(3)  # Output: Removing the element at index 3
+     list_length = len(my_list)  # Output: Getting the length of the list
+     
+     # Checking membership
+     element_in_list = 6 in my_list  # Output: Checking if 6 is in the list
+     
+     # Printing the results
+     print("Original List:", my_list)  # Output: Original List: [1, 2, 10, 4, 5, 6]
+     print("First Element:", first_element)  # Output: First Element: 1
+     print("Removed Element:", removed_element)  # Output: Removed Element: 4
+     print("List Length:", list_length)  # Output: List Length: 5
+     print("Is 6 in List:", element_in_list)  # Output: Is 6 in List: True
+     </code></pre>
+     <h3>Length</h3>
+     <ul>
+     <li>You can find the number of elements in a list using the len() function.</li>
+     </ul>
+     <pre class="language-python"><code># Length of a List Example
+     
+     # Create a sample list
+     my_list = [1, 2, 3, 4, 5]
+     
+     # Find the length of the list
+     list_length = len(my_list)  # No output, finding the length of the list
+     
+     # Print the result
+     print("List Length:", list_length)  # Output: List Length: 5
+     </code></pre>
+     <div class="flex items-center relative text-gray-200 bg-gray-800 dark:bg-token-surface-primary px-4 py-2 text-xs font-sans justify-between rounded-t-md" style="border: 0px solid #d9d9e3; box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; position: relative; display: flex; align-items: center; justify-content: space-between; border-top-left-radius: 0.375rem; border-top-right-radius: 0.375rem; --tw-bg-opacity: 1; background-color: var(--surface-primary); padding: 0.5rem 1rem; font-family: S&ouml;hne, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 0.75rem; line-height: 1rem; --tw-text-opacity: 1; color: rgba(217,217,227,var(--tw-text-opacity));">&nbsp;</div>
      <!-- content end -->
 
     </div>

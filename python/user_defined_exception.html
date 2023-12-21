@@ -128,12 +128,39 @@
     <div class="content_box">
      <!-- content start -->
      <h1>User-Defined Exception</h1>
-     <ul>
-     <li>User-defined exceptions are&nbsp;created to force certain constraints on the values of the variables.</li>
-     <li>To create a User-defined Exception, we have to create a class that implements the Exception class.</li>
-     <li>We can raise(throw) these exceptions using the raise keyword.</li>
-     </ul>
-     <p>----------------------------CODE-----------------------------------</p>
+<ul>
+<li>User-defined exceptions are&nbsp;created to force certain constraints on the values of the variables.</li>
+<li>To create a User-defined Exception, we have to create a class that implements the Exception class.</li>
+<li>We can raise(throw) these exceptions using the raise keyword.</li>
+</ul>
+<pre class="language-python"><code># Custom exception for negative values
+class NegativeValueError(Exception):
+    pass
+
+# Function that checks if a number is positive
+def check_positive(number):
+    if number &lt; 0:
+        raise NegativeValueError("Negative values are not allowed.")
+
+# Main program
+try:
+    # Take user input as an integer
+    user_input = int(input("Enter a positive number: "))
+    
+    # Check if the input is positive
+    check_positive(user_input)
+
+    # If positive, print a success message
+    print("You entered a positive number.")
+
+# Catch custom exception for negative values
+except NegativeValueError as e:
+    print(f"Error: {e}")
+
+# Catch a ValueError if the user enters a non-numeric value
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+</code></pre>
      <!-- content end -->
 
     </div>
