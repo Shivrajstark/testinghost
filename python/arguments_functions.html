@@ -131,21 +131,63 @@
     <div class="content_box">
      <!-- content start -->
      <h1>Arguments in Function</h1>
-<p>Arguments are the values that you provide when you call a function. Functions can take zero or more arguments, and these arguments are specified within the parentheses of the function definition</p>
-<h4>There are different types of arguments in Python functions:</h4>
-<ul>
-<li>Positional Arguments</li>
-<li>Keyword Arguments</li>
-<li>Default Arguments</li>
-<li>Variable - Length Arguments</li>
-</ul>
-<p>-------------------------CODE----------------------------------</p>
-<h1>&nbsp;Return</h1>
-<ul>
-<li>The return statement is used to specify the value that a function should return when it is called.</li>
-<li>It signals the end of the function's execution and passes a value (or multiple values) back to the caller.</li>
-</ul>
-<p>-------------------------CODE---------------------------------</p>
+     <p>Arguments are the values that you provide when you call a function. Functions can take zero or more arguments, and these arguments are specified within the parentheses of the function definition</p>
+     <h4>There are different types of arguments in Python functions:</h4>
+     <ul>
+     <li>Positional Arguments</li>
+     <li>Keyword Arguments</li>
+     <li>Default Arguments</li>
+     <li>Variable - Length Arguments</li>
+     </ul>
+     <pre class="language-python"><code># Function with regular arguments
+     def greet(name, greeting="Hello"):
+         print(greeting, name)
+     
+     # Function with variable-length arguments
+     def variable_args(*args):
+         for arg in args:
+             print(arg)
+     
+     # Function with keyword arguments
+     def keyword_args(**kwargs):
+         for key, value in kwargs.items():
+             print(f"{key}: {value}")
+     
+     # Calling the functions
+     greet("Alice")  # Output: Hello Alice
+     greet("Bob", "Hi")  # Output: Hi Bob
+     
+     variable_args(1, "two", 3.0, [4, 5])  # Output: 1, two, 3.0, [4, 5]
+     
+     keyword_args(name="Charlie", age=25, city="Wonderland")
+     # Output:
+     # name: Charlie
+     # age: 25
+     # city: Wonderland
+     </code></pre>
+     <h1>&nbsp;Return</h1>
+     <ul>
+     <li>The return statement is used to specify the value that a function should return when it is called.</li>
+     <li>It signals the end of the function's execution and passes a value (or multiple values) back to the caller.</li>
+     </ul>
+     <pre class="language-python"><code># Function to calculate the area of a rectangle
+     def calculate_rectangle_area(length, width):
+         # Calculate the area using the formula: area = length * width
+         area = length * width
+         # Return the calculated area
+         return area
+     
+     # Example usage
+     rectangle_length = 5
+     rectangle_width = 3
+     
+     # Call the function and store the result in a variable
+     area_result = calculate_rectangle_area(rectangle_length, rectangle_width)
+     
+     # Print the result
+     print("The area of the rectangle is:", area_result)
+     # Output: The area of the rectangle is: 15
+     </code></pre>
         
      <!-- content end -->
 

@@ -129,14 +129,34 @@
     <div class="content_box">
      <!-- content start -->
      <h1>Object Oriented Programming</h1>
-     <h3>Class</h3>
-     <ul>
-     <li>A class is a fundamental concept in object-oriented programming (OOP).</li>
-     <li>It acts as a blueprint for creating objects, providing a structure for their attributes and methods.</li>
-     <li>Classes enable the organization of code into logical units, promoting modularity and maintainability.</li>
-     </ul>
-     <p>&nbsp;</p>
-     <p>---------------------------CODE---------------------------------</p>
+<h3>Class</h3>
+<ul>
+<li>A class is a fundamental concept in object-oriented programming (OOP).</li>
+<li>It acts as a blueprint for creating objects, providing a structure for their attributes and methods.</li>
+<li>Classes enable the organization of code into logical units, promoting modularity and maintainability.</li>
+</ul>
+<p>&nbsp;</p>
+<pre class="language-python"><code>class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print(f"{self.name} says Woof!")
+
+# Creating an instance of the Dog class
+my_dog = Dog(name="Buddy", age=3)
+
+# Accessing attributes and calling methods
+print(f"My dog's name is {my_dog.name}.")
+# Output: My dog's name is Buddy.
+
+print(f"My dog is {my_dog.age} years old.")
+# Output: My dog is 3 years old.
+
+my_dog.bark()
+# Output: Buddy says Woof!
+</code></pre>
      <!-- content end -->
 
     </div>

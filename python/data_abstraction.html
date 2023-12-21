@@ -134,6 +134,30 @@
      <li>Data abstraction is one of the most essential concepts of Python OOPs which is used to hide irrelevant details from the user and show the details that are relevant to the users.</li>
      <li>For example, the readers of geeksforgeeks only know that a writer can write an article on geeksforgeeks, and when it gets published readers can read the articles but the reader is not aware of the background process of publishing the article.</li>
      </ul>
+     <pre class="language-python"><code>class MyClass:
+         def __init__(self):
+             # Public attribute
+             self.public_variable = 42
+             # Mangling attribute
+             self.__mangled_variable = "I am a mangled variable"
+     
+         def get_mangled_variable(self):
+             return self.__mangled_variable
+     
+     # Create an instance of MyClass
+     obj = MyClass()
+     
+     # Access public attribute
+     print(obj.public_variable)
+     # Output: 42
+     
+     # Try to access mangled attribute directly (will result in an AttributeError)
+     # print(obj.__mangled_variable)
+     
+     # Access mangled attribute using the method
+     print(obj.get_mangled_variable())
+     # Output: I am a mangled variable
+     </code></pre>
      <!-- content end -->
 
     </div>
